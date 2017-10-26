@@ -29,6 +29,7 @@ public class Ulamek
   {
     up = u;
     down = d;
+    uprosc();
   }
 
   public int getUp()
@@ -57,6 +58,10 @@ public class Ulamek
     down/=nwd;
   }
 
+  public Ulamek odwroc(){
+    return new Ulamek(down,up);
+  }
+
   public Ulamek dodaj(int a)
   {
     return new Ulamek(up+down*a,down);
@@ -81,6 +86,15 @@ public class Ulamek
   public Ulamek pomnuz(Ulamek u)
   {
     return new Ulamek(up*u.getUp(),down*u.getDown());
+  }
+
+  public Ulamek podziel(Ulamek u)
+  {
+    return pomnuz(u.odwroc());
+  }
+
+  public Ulamek podziel(int a){
+    return new Ulamek(up,down*a);
   }
 
   public void wypisz()
