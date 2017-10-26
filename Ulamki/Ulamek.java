@@ -93,17 +93,20 @@ public class Ulamek
     return pomnoz(u.odwroc());
   }
 
-  public Ulamek podziel(int a){
+  public Ulamek podziel(int a)
+  {
     return new Ulamek(up,down*a);
   }
 
   public void wypisz()
   {
     int max;
-    if(up>down){
+    if(up>down)
+    {
       max = up;
     }
-    else {
+    else
+    {
       max = down;
     }
     int len = String.valueOf(max).length();
