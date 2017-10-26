@@ -40,14 +40,14 @@ public class Zespolona
       System.out.println(a + " + " + b + "i");
     }
 
-    public Zespolona pomnoz(double w)
-    {
-      return new Zespolona(a*w,b*w);
-    }
-
     public Zespolona dodaj(Zespolona z)
     {
       return new Zespolona(a+z.getA(),b+z.getB());
+    }
+
+    public Zespolona pomnoz(double w)
+    {
+      return new Zespolona(a*w,b*w);
     }
 
     public Zespolona pomnoz(Zespolona z)
