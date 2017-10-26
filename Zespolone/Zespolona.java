@@ -40,7 +40,7 @@ public class Zespolona
       System.out.println(a + " + " + b + "i");
     }
 
-    public Zespolona pomnuz(double w)
+    public Zespolona pomnoz(double w)
     {
       return new Zespolona(a*w,b*w);
     }
@@ -50,7 +50,7 @@ public class Zespolona
       return new Zespolona(a+z.getA(),b+z.getB());
     }
 
-    public Zespolona pomnuz(Zespolona z)
+    public Zespolona pomnoz(Zespolona z)
     {
       return new Zespolona(a*z.getA()-b*getB(),b*z.getA()+a*getB());
     }

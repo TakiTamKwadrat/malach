@@ -8,7 +8,7 @@ public class Main
     System.out.println();
     u.wypisz();
     System.out.println();
-    u = u.pomnuz(7);
+    u = u.pomnoz(7);
     u.wypisz();
     System.out.println();
     u = u.podziel(w);

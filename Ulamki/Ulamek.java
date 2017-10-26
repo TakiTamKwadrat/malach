@@ -78,19 +78,19 @@ public class Ulamek
     return wynik;
   }
 
-  public Ulamek pomnuz(int a)
+  public Ulamek pomnoz(int a)
   {
     return new Ulamek(up*a,down);
   }
 
-  public Ulamek pomnuz(Ulamek u)
+  public Ulamek pomnoz(Ulamek u)
   {
     return new Ulamek(up*u.getUp(),down*u.getDown());
   }
 
   public Ulamek podziel(Ulamek u)
   {
-    return pomnuz(u.odwroc());
+    return pomnoz(u.odwroc());
   }
 
   public Ulamek podziel(int a){
