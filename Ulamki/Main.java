@@ -12,6 +12,7 @@ public class Main
     u.wypisz();
     System.out.println();
     u = u.podziel(w);
+    u = u.dodaj(w);
     u.wypisz();
   }
 }
