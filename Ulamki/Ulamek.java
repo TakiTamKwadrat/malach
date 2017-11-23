@@ -100,16 +100,7 @@ public class Ulamek
 
   public void wypisz()
   {
-    int max;
-    if(up>down)
-    {
-      max = up;
-    }
-    else
-    {
-      max = down;
-    }
-    int len = String.valueOf(max).length();
+    int len = String.valueOf(Math.max(up,down)).length();
     System.out.println(up);
     for(int i=0;i<len;i++)
       System.out.print("-");
