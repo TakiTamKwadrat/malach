@@ -45,4 +45,15 @@ public class Prosta
     return Math.abs(A*p.getX()+B*p.getY()+C)/Math.sqrt(A*A+B*B);
   }
 
+  public boolean czyRownolegle(Prosta k)
+  {
+    return (A*k.getB()-B*k.getA() == 0);
+  }
+
+  public boolean czyProstopadle(Prosta k)
+  {
+    return (A*k.getA() - B*k.getB() == 0);
+  }
+
+
 }
