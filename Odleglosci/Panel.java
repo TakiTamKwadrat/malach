@@ -2,6 +2,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.font.*;
 
 import java.awt.GridLayout;
 import javax.swing.border.TitledBorder;
@@ -36,6 +39,8 @@ public class Panel extends JPanel implements ActionListener
     wynik = new JTextField();
     wynik.setEditable(false);
     wynik.setPreferredSize(new Dimension(180,30) );
+    wynik.setFont(new Font("SansSerif", Font.BOLD, 15));
+    wynik.setHorizontalAlignment(JTextField.CENTER);
     button = new JButton("");
     button.setPreferredSize(new Dimension(40,30) );
     button.addActionListener(this);
