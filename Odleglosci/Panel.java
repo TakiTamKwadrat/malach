@@ -60,7 +60,7 @@ public class Panel extends JPanel implements ActionListener
   }
 
   @Override
-	public void actionPerformed(ActionEvent e)
+  public void actionPerformed(ActionEvent e)
   {
     wynik.setText("");
     Ob e1 = firstPanel.getOb();
@@ -90,5 +90,5 @@ public class Panel extends JPanel implements ActionListener
         wynik.setText(String.valueOf(A.odleglosc(B)));
       }
     }
-	}
+  }
 }
